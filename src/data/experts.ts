@@ -23,6 +23,8 @@ export const expertTypeLabels: Record<ExpertType, string> = {
   therapy: "Therapy",
 };
 
+export const consultModes: ConsultMode[] = ["Video", "In-person", "Phone"];
+
 // All people below are fictional and exist only for demonstration.
 export const experts: Expert[] = [
   {
@@ -55,6 +57,20 @@ export const experts: Expert[] = [
     bio: "Supports families with child health questions and routine paediatric care.",
   },
   {
+    slug: "sana-fernandes",
+    name: "Dr. Sana Fernandes",
+    initials: "SF",
+    type: "doctor",
+    role: "Gynaecologist",
+    qualifications: "MBBS, MS (Obstetrics and Gynaecology)",
+    experienceYears: 14,
+    specialisations: ["Women's health", "Pregnancy care", "Preventive screening"],
+    languages: ["English", "Hindi", "Telugu"],
+    modes: ["Video", "In-person"],
+    city: "Hyderabad",
+    bio: "Provides routine women's health consultations with a focus on clear, respectful communication.",
+  },
+  {
     slug: "meera-iyer",
     name: "Meera Iyer",
     initials: "MI",
@@ -62,7 +78,7 @@ export const experts: Expert[] = [
     role: "Clinical dietician",
     qualifications: "M.Sc. Clinical Nutrition and Dietetics",
     experienceYears: 8,
-    specialisations: ["Balanced eating", "Family nutrition", "Meal planning"],
+    specialisations: ["Child nutrition", "Family nutrition", "Meal planning"],
     languages: ["English", "Tamil", "Malayalam"],
     modes: ["Video", "Phone"],
     city: "Coimbatore",
@@ -84,6 +100,20 @@ export const experts: Expert[] = [
     bio: "Works with active people on fuelling their training and everyday routines.",
   },
   {
+    slug: "priya-venkatesh",
+    name: "Priya Venkatesh",
+    initials: "PV",
+    type: "nutrition",
+    role: "Dietician",
+    qualifications: "M.Sc. Food and Nutrition",
+    experienceYears: 7,
+    specialisations: ["Weight management", "Healthy eating", "Meal planning"],
+    languages: ["English", "Tamil"],
+    modes: ["Video", "In-person", "Phone"],
+    city: "Chennai",
+    bio: "Offers practical guidance on everyday food choices and sustainable routines.",
+  },
+  {
     slug: "divya-nair",
     name: "Divya Nair",
     initials: "DN",
@@ -91,7 +121,7 @@ export const experts: Expert[] = [
     role: "Counselling psychologist",
     qualifications: "M.Sc. Counselling Psychology",
     experienceYears: 10,
-    specialisations: ["Stress and workload", "Life transitions", "Student wellbeing"],
+    specialisations: ["Stress management", "Life transitions", "Student wellbeing"],
     languages: ["English", "Malayalam", "Tamil"],
     modes: ["Video", "In-person"],
     city: "Kochi",
